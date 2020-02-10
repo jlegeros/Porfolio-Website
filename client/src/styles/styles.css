@@ -1,0 +1,64 @@
+.coming-soon {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+}
+
+.coming-soon img {
+  width: 50%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.left-side {
+  grid-area: "left";
+  display: grid;
+  height: 95vh;
+  background-color: #222;
+  align-self: center;
+  background-image: url(../images/graph-paper.svg);
+  color: white;
+  justify-items: center;
+  align-content: center;
+  min-width: 300px;
+}
+
+.right-side {
+  grid-area: "right";
+  display: grid;
+  height: 95vh;
+  background-color: red;
+  align-self: center;
+  grid-gap: 20px;
+  grid-template-columns: 0px 1fr 1fr 0px;
+  grid-template-rows: 0px 1fr 1fr 0px;
+  grid-template-areas: ". . . ." ". about-me portfolio ." ". my-skills contact-me ." ". . . .";
+}
+
+.body {
+  display: grid;
+  height: 100vh;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 3fr;
+  background-image: radial-gradient( grey 70%, black);
+}
+
+.about-me {
+  grid-area: about-me;
+  background-color: blue;
+}
+
+.portfolio {
+  grid-area: portfolio;
+  background-color: yellow;
+}
+
+.my-skills {
+  grid-area: my-skills;
+  background-color: orange;
+}
+
+.contact-me {
+  grid-area: contact-me;
+  background-color: orchid;
+}
